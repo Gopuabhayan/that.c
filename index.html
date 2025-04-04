@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gopu Abhayan</title>
+    <style>
+        /* Your existing CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        header {
+            background-color: #5b8c51;
+            color: white;
+            padding: 1rem 0;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 20px;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        section {
+            padding: 2rem 0;
+        }
+        
+        .hero {
+            background-color: #e8f4e5;
+            text-align: center;
+            padding: 4rem 0;
+        }
+        
+        h1, h2, h3 {
+            color: #5b8c51;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #5b8c51;
+            color: white;
+            padding: 10px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 1rem;
+            cursor: pointer;
+            border: none;
+        }
+        
+        .treatments {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 2rem;
+        }
+        
+        .treatment-card {
+            background-color: white;
+            border-radius: 5px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        
+        .contact-form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        .form-message {
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 4px;
+            display: none;
+        }
+        
+        .success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        
+        .error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Gopu Abhayan</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#treatments">Experiments</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Welcome to Gopu Abhayan</h1>
+            <p>Chemistry, Computer Science, and Web Development</p>
+            <a href="#contact" class="btn">Book Consultation</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Hello! I'm GOPU Abhayan, a 6th-standard student with a passion for science and discovery. I aspire to become a scientist specializing in chemistry.<br> Alongside my studies, I love exploring coding and web development, which allow me to bring my ideas to life. Join me on my journey as I explore the wonders of science and technology!</p>
+        </div>
+    </section>
+
+    <section id="treatments">
+        <div class="container">
+            <h2>Our Science Experiments</h2>
+            <div class="treatments">
+                <div class="treatment-card">
+                    <h3>Candy Volcano</h3>
+                    <p>You need baking soda, vinegar, aluminum foil, food coloring and Play.</p>
+                </div>
+                <div class="treatment-card">
+                    <h3>Oobleck</h3>
+                    <p>A suspension of cornstarch and water that can behave like a solid or a liquid depending on how much pressure you apply.</p>
+                </div>
+                <div class="treatment-card">
+                    <h3>Lava Lamp</h3>
+                    <p>Lava lamps have a variety of uses, including: Decoration: Lava lamps are a popular decorative item for homes and offices.</p>
+                </div>
+                <div class="treatment-card">
+                    <h3>Lemon Volcano</h3>
+                    <p>Lemon Volcano Science Experiment - beyond the playroom. This lemon volcano experiment is no exception and is a colorful, hands-on way to explore early chemistry concepts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Fill the Form</h2>
+            <div class="contact-form">
+                <form id="googleSheetForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Your Phone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+                <div id="formMessage" class="form-message"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Contact: GV computers, Kerala, India | Phone: +91 7034024686 | Email: gopuabhayan5@gmail.com</p>
+            <p>Hours: Monday - Friday: 9am - 7pm | Saturday: 10am - 5pm | Sunday: Closed</p>
+            <p>&copy; 2025 Gopu Abhayan, Vishakh Abhayan. Only software service and hardware.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Form handling with Google Sheets
+        document.getElementById('googleSheetForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const form = document.getElementById('googleSheetForm');
+            const formMessage = document.getElementById('formMessage');
+            
+            // Display loading message
+            formMessage.textContent = 'Submitting your message...';
+            formMessage.className = 'form-message';
+            formMessage.style.display = 'block';
+            
+            // Get form data
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
+            
+            // Create URL for submission
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbw64hnEC1WCkCVjaZguWpXjtVaBQIc6tMG159ZGn_itRy0K7rUSImvhYaa0GRtHGm4bBQ/exec';
+            
+            // Define callback function first (must be defined before used in URL)
+            window.handleFormResponse = function(data) {
+                console.log('Response received:', data);
+                
+                if (data && data.result === 'success') {
+                    // Success message
+                    formMessage.textContent = 'Thank you! Your message has been submitted successfully.';
+                    formMessage.className = 'form-message success';
+                    form.reset();
+                    
+                    // Hide the message after 5 seconds
+                    setTimeout(() => {
+                        formMessage.style.display = 'none';
+                    }, 5000);
+                } else {
+                    // Error message
+                    const errorMsg = data && data.error ? data.error : 'Unknown error';
+                    formMessage.textContent = 'Oops! There was a problem: ' + errorMsg;
+                    formMessage.className = 'form-message error';
+                }
+                
+                // Clean up the script tag
+                if (window.lastScriptElement) {
+                    document.body.removeChild(window.lastScriptElement);
+                    window.lastScriptElement = null;
+                }
+            };
+            
+            // Use the URL search parameters to submit data
+            const urlWithParams = new URL(scriptURL);
+            urlWithParams.searchParams.append('name', name);
+            urlWithParams.searchParams.append('email', email);
+            urlWithParams.searchParams.append('phone', phone);
+            urlWithParams.searchParams.append('message', message);
+            urlWithParams.searchParams.append('timestamp', new Date().toISOString());
+            
+            // Make sure to add the callback parameter
+            urlWithParams.searchParams.append('callback', 'handleFormResponse');
+            
+            console.log('Submitting form to URL:', urlWithParams.toString());
+            
+            // Create script element for JSONP request
+            const script = document.createElement('script');
+            script.src = urlWithParams.toString();
+            
+            // Handle errors
+            script.onerror = function() {
+                console.error('Script loading error');
+                formMessage.textContent = 'Oops! There was a problem connecting to the server. Please try again later.';
+                formMessage.className = 'form-message error';
+                
+                // Clean up the script tag
+                document.body.removeChild(script);
+            };
+            
+            // Add script to the document and save reference
+            window.lastScriptElement = script;
+            document.body.appendChild(script);
+            
+            // Set a timeout in case the request takes too long
+            setTimeout(function() {
+                if (window.lastScriptElement === script) {
+                    console.warn('Request timeout');
+                    formMessage.textContent = 'The request is taking longer than expected. Please check your connection and try again.';
+                    formMessage.className = 'form-message error';
+                }
+            }, 10000);
+        });
+    </script>
+</body>
+</html>
