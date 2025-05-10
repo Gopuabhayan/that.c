@@ -1,0 +1,15 @@
+/home/hacker/exercism/project/obj/Debug/net9.0/project.GeneratedMSBuildEditorConfig.editorconfig
+/home/hacker/exercism/project/obj/Debug/net9.0/project.AssemblyInfoInputs.cache
+/home/hacker/exercism/project/obj/Debug/net9.0/project.AssemblyInfo.cs
+/home/hacker/exercism/project/obj/Debug/net9.0/project.csproj.CoreCompileInputs.cache
+/home/hacker/exercism/project/obj/Debug/net9.0/project.sourcelink.json
+/home/hacker/exercism/project/bin/Debug/net9.0/project
+/home/hacker/exercism/project/bin/Debug/net9.0/project.deps.json
+/home/hacker/exercism/project/bin/Debug/net9.0/project.runtimeconfig.json
+/home/hacker/exercism/project/bin/Debug/net9.0/project.dll
+/home/hacker/exercism/project/bin/Debug/net9.0/project.pdb
+/home/hacker/exercism/project/obj/Debug/net9.0/project.dll
+/home/hacker/exercism/project/obj/Debug/net9.0/refint/project.dll
+/home/hacker/exercism/project/obj/Debug/net9.0/project.pdb
+/home/hacker/exercism/project/obj/Debug/net9.0/project.genruntimeconfig.cache
+/home/hacker/exercism/project/obj/Debug/net9.0/ref/project.dll

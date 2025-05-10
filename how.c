@@ -1,13 +1,14 @@
 #include<stdio.h>
 int main()
 {
-    int s,i=0;
+    int s,i,a;
     printf("enter sothing\n");
         scanf("%d",&s);
-    while (i<=200)
+    for ( a = 0; a <=i; a++)
     {
         printf("%d\n");
-        i=i+1;
+        scanf("%d",&a);
     }
+    
    
 }
